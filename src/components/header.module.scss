@@ -1,0 +1,76 @@
+.header {
+    padding: 1rem 0 3rem;
+    // border-bottom: 1px solid black;
+    margin-bottom: 4rem;
+    padding: 1rem 3rem 1rem;
+    
+}
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navSection{
+    // border: 1px solid black;
+    height: 50px;
+    // padding: 1rem;
+    display: flex;
+    align-items: center;
+    // p{
+    //     display: inline-block;
+    //     font-size: 16px;
+    //     margin-left: 60px;
+    //     vertical-align: top;;
+    // }
+}
+.navIcon img{
+    height: 25px;
+    margin-right: 1.2rem; 
+}
+.getApp{
+    // width: 109px;
+//   height: 32px;
+//   font-family: NimbusSan-Bol;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.76px;
+  text-align: center;
+  color: #000000;
+  padding-top: .5rem;
+  margin-left: 28px;
+  margin-right: 42px;
+}
+.submitMusic{
+    border: 1px solid black;
+    transform: translateY(15%);
+    // width: 204px;
+//   height: 32px;
+//   font-family: NimbusSan-Bol;
+  font-size: 12px;
+  font-weight: bold;
+//   font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.76px;
+  text-align: center;
+  color: #000000;
+  padding: 5px 15px;
+  
+}
+
+
+
+.logo{
+    height: 50px;
+    
+}
+
+.blogLogo{
+    display: block;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
