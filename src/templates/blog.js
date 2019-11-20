@@ -62,23 +62,7 @@ const Blog = props => {
       <Head title={props.data.contentfulBlogPost.title}/>
       {data.headImage ? <img className={styles.headerImage} src={"https:" + props.data.contentfulBlogPost.headImage.file.url} /> : null }
       <div className={styles.mainBody}>
-          {data.typeImage ? <img src={"https:" + props.data.contentfulBlogPost.typeImage.file.url}/> : null }
-          
-          <p className={styles.publishedDate}>{props.data.contentfulBlogPost.publishedDate.slice(0, 2) + "." + props.data.contentfulBlogPost.publishedDate.slice(3, 5) + "." + props.data.contentfulBlogPost.publishedDate.slice(-2)}</p>
-          <h1 className={styles.test}>{props.data.contentfulBlogPost.title}</h1>
-          {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
-          <div className={styles.followArtists}>
-            <p className={styles.followArtists__text}>Follow {data.artistName}</p>
-            <div className={styles.followArtists__icons}>
-                {data.spotifyLink ? <a href={data.spotifyLink}><img src={"../spotify.png"} target="_blank"></img></a> : null}
-                {data.soundcloudLink ? <a href={data.soundcloudLink}><img src={"../soundcloud.png"}></img></a> : null}
-                {data.facebookLink ? <a href={data.facebookLink}><img src={"../facebook.png"}></img></a> : null}
-                {data.twitterLink ? <a href={data.twitterLink}>Twitter</a> : null}
-                {data.instagramLink ? <a href={data.instagramLink}><img src={"../instagram.png"} target="_blank"></img></a> : null}
-                
-            </div>
-          </div>
-          <div className={styles.socialShare}>
+      <div className={styles.socialShare}>
             <p className={styles.socialShare__text}>Share to social</p>
             <div className={styles.socialShare__icons}>
                <FacebookShareButton url={window.location.replace}>
@@ -93,6 +77,22 @@ const Blog = props => {
                 <EmailShareButton url={window.location.replace}>
                    <img src={"../email.png"} />
                 </EmailShareButton> 
+            </div>
+          </div>
+          {data.typeImage ? <img src={"https:" + props.data.contentfulBlogPost.typeImage.file.url}/> : null }
+          
+          <p className={styles.publishedDate}>{props.data.contentfulBlogPost.publishedDate.slice(0, 2) + "." + props.data.contentfulBlogPost.publishedDate.slice(3, 5) + "." + props.data.contentfulBlogPost.publishedDate.slice(-2)}</p>
+          <h1 className={styles.test}>{props.data.contentfulBlogPost.title}</h1>
+          {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+          <div className={styles.followArtists}>
+            <p className={styles.followArtists__text}>Follow {data.artistName}</p>
+            <div className={styles.followArtists__icons}>
+                {data.spotifyLink ? <a href={data.spotifyLink}><img src={"../spotify.png"} target="_blank"></img></a> : null}
+                {data.soundcloudLink ? <a href={data.soundcloudLink}><img src={"../soundcloud.png"}></img></a> : null}
+                {data.facebookLink ? <a href={data.facebookLink}><img src={"../facebook.png"}></img></a> : null}
+                {data.twitterLink ? <a href={data.twitterLink}>Twitter</a> : null}
+                {data.instagramLink ? <a href={data.instagramLink}><img src={"../instagram.png"} target="_blank"></img></a> : null}
+                
             </div>
           </div>
       </div>

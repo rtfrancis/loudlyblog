@@ -4,7 +4,7 @@
 .mainBody{
  max-width: 560px;
  margin: 0 auto;
- margin-top: 100px;
+ margin-top: 50px;
 //  border: 1px solid black;
 }
 .publishedDate{
@@ -20,7 +20,7 @@
 .followArtists{
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 100px;
+    margin-top: 60px;
     &__icons{
         // height: 30px;
         margin-top: 35px;
@@ -34,17 +34,18 @@
 .socialShare{
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 100px;
+    // margin-top: 50px;
+    margin-bottom: 50px;
     // border: 1px solid black;
     &__icons{
         // height: 30px;
-        margin-top: 35px;
+        margin-top: 15px;
         display: flex;
 
         // border: 1px solid black;
         img{
             height: 30px;
-            margin-right: 60px;
+            margin-right: 40px;
         }
     }
 }
