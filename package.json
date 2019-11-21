@@ -4,6 +4,9 @@
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
   "license": "MIT",
+  "engines": {
+    "node": "10.16.3"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd .env.development gatsby develop",
