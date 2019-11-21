@@ -6,6 +6,7 @@ import { FacebookShareButton, TwitterShareButton, RedditShareButton, EmailShareB
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import Featured from "../components/featured"
 
 import styles from "./blogPage.module.scss"
 
@@ -79,7 +80,7 @@ const Blog = props => {
                 </EmailShareButton> 
             </div>
           </div>
-          {data.typeImage ? <img src={"https:" + props.data.contentfulBlogPost.typeImage.file.url}/> : null }
+          {data.typeImage ? <img src={"https:" + props.data.contentfulBlogPost.typeImage.file.url} className={styles.typeImage}/> : null }
           
           <p className={styles.publishedDate}>{props.data.contentfulBlogPost.publishedDate.slice(0, 2) + "." + props.data.contentfulBlogPost.publishedDate.slice(3, 5) + "." + props.data.contentfulBlogPost.publishedDate.slice(-2)}</p>
           <h1 className={styles.test}>{props.data.contentfulBlogPost.title}</h1>

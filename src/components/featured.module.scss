@@ -1,0 +1,25 @@
+.featuredContainer{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+
+    &__type{
+        position: absolute;
+        left: 0;
+        height: 70px;
+    }
+
+    &__title{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        width: 60%;
+        line-height: 1.2;
+        // height: 15%;
+        // border: 2px solid yellow;
+        margin-left: 2rem;
+    }
+}

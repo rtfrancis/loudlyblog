@@ -42,6 +42,15 @@
   padding-top: .5rem;
   margin-left: 28px;
   margin-right: 42px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+.getApp:hover{
+    // text-decoration: underline;
+    border-bottom: 2px solid black;
+    // padding-bottom: 1px;
+    
 }
 .submitMusic{
     border: 1px solid black;
@@ -58,7 +67,12 @@
   text-align: center;
   color: #000000;
   padding: 5px 15px;
+  cursor: pointer;
   
+}
+.submitMusic:hover{
+    background: black;
+    color: white;
 }
 
 

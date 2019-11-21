@@ -9,14 +9,17 @@
 }
 .publishedDate{
     color: #a0a0a0;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     letter-spacing: 0.25px;
     margin-top: 50px;
 }
 .headerImage{
     width: 100%;
 }
-
+.typeImage{
+    height: 45px;
+}
 .followArtists{
     text-transform: uppercase;
     font-weight: bold;
@@ -35,7 +38,7 @@
     text-transform: uppercase;
     font-weight: bold;
     // margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
     // border: 1px solid black;
     &__icons{
         // height: 30px;
@@ -44,7 +47,7 @@
 
         // border: 1px solid black;
         img{
-            height: 30px;
+            height: 25px;
             margin-right: 40px;
         }
     }
@@ -66,5 +69,9 @@
 }
 
 iframe{
-    margin: 80px 0;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px; 
+    // margin: 0 auto;
+
 }
