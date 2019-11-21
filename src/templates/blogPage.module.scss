@@ -40,16 +40,22 @@
     // margin-top: 50px;
     margin-bottom: 55px;
     // border: 1px solid black;
+    outline: none;
     &__icons{
         // height: 30px;
         margin-top: 15px;
         display: flex;
-
+        outline: none;
+        
         // border: 1px solid black;
         img{
             height: 25px;
             margin-right: 40px;
+            cursor: pointer;
         }
+    }
+    &__icons:focus{
+        outline: none;
     }
 }
 

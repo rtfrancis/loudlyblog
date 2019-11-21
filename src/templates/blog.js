@@ -13,7 +13,7 @@ import styles from "./blogPage.module.scss"
 export const query = graphql`
   query($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
-      
+      slug
       headImage {
         file {
           url
@@ -66,16 +66,16 @@ const Blog = props => {
       <div className={styles.socialShare}>
             <p className={styles.socialShare__text}>Share to social</p>
             <div className={styles.socialShare__icons}>
-               <FacebookShareButton url={window.location.replace}>
+               <FacebookShareButton url={`https://www.loudblog.herokuapp.com/blog/${props.data.contentfulBlogPost.slug}`}>
                   <img src={"../facebook.png"} />
                 </FacebookShareButton>
-                <TwitterShareButton url={window.location.replace}>
+                <TwitterShareButton url={`https://www.loudblog.herokuapp.com/blog/${props.data.contentfulBlogPost.slug}`}>
                   <img src={"../twitter.png"} />
                 </TwitterShareButton>
-                <RedditShareButton url={window.location.replace}>
+                <RedditShareButton url={`https://www.loudblog.herokuapp.com/blog/${props.data.contentfulBlogPost.slug}`}>
                   <img src={"../reddit.png"} />
                 </RedditShareButton>
-                <EmailShareButton url={window.location.replace}>
+                <EmailShareButton url={`https://www.loudblog.herokuapp.com/blog/${props.data.contentfulBlogPost.slug}`}>
                    <img src={"../email.png"} />
                 </EmailShareButton> 
             </div>
