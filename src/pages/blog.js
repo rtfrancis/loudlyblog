@@ -32,6 +32,8 @@ const BlogPage = () => {
         }
     `)
     console.log(data.allContentfulBlogPost.edges)
+    const selected = null; 
+    console.log("testing: ", selected)
     return (
         
         <div>
