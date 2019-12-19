@@ -1,12 +1,9 @@
 .container{
-    // border: 1px solid black;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 3rem;
     text-align: center;
     ul {
-        // border: 1px solid red;
-        // width: 55%;
         display: inline-block;
        
         margin: 0 auto;
@@ -31,4 +28,24 @@
 }
 .activeNavItem{
     border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 750px){
+    .container{
+        display: flex;
+        ul{
+            width: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-content: end;
+            li{
+                justify-self: center;
+            }
+            li:not(:last-child){
+                margin-right: 0;
+            }
+            
+        }
+    }
 }

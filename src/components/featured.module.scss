@@ -1,5 +1,6 @@
 .featuredContainer{
     width: 80%;
+    max-width: 1100px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 3rem;
@@ -7,19 +8,26 @@
     &__type{
         position: absolute;
         left: 0;
-        height: 70px;
+        // height: 70px;
+        height: 20%;
     }
 
     &__title{
         position: absolute;
         bottom: 0;
         color: white;
-        font-size: 50px;
+        font-size: 5vw;
         font-weight: bold;
         width: 60%;
         line-height: 1.2;
         // height: 15%;
         // border: 2px solid yellow;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .featuredContainer{
+        width: 100%;
     }
 }

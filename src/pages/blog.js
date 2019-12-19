@@ -6,7 +6,7 @@ import blogStyles from './blog.module.scss'
 import Head from "../components/head"
 import Featured from "../components/featured"
 // import Sorting from "../components/articles"
-import Testing from "../components/sortingNew"
+import Sorting from "../components/sorting"
 
 const BlogPage = () => {
     // const data = useStaticQuery(graphql`
@@ -41,7 +41,7 @@ const BlogPage = () => {
         <div>
             <Head title="Blog"/>
             <Featured />
-            <Testing />
+            <Sorting />
         </div>
             
       

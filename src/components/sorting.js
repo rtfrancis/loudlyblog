@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
 import Articles from "./articles";
-import sortingStyles from './sortingNew.module.scss'
+import sortingStyles from './sorting.module.scss'
 
-class Testing extends React.Component{
+class Sorting extends React.Component{
     constructor(props){
         super(props);
         this.state = { type: "all" }
@@ -27,4 +27,4 @@ class Testing extends React.Component{
         )
     }
 }
-export default Testing
+export default Sorting

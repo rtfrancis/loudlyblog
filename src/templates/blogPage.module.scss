@@ -56,6 +56,7 @@
     }
     &__icons:focus{
         outline: none;
+        outline: 0;
     }
 }
 
@@ -75,9 +76,28 @@
 }
 
 iframe{
+    display: block;
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px; 
-    // margin: 0 auto;
+    max-width: 98%;
+}
 
+@media screen and (max-width: 675px){
+    .mainBody{
+        padding: 0 2rem;
+    }
+    .followArtists{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 60px;
+        &__icons{
+            // height: 30px;
+            margin-top: 35px;
+            img{
+                height: 30px;
+                margin-right: 28px;
+            }
+        }
+    }
 }

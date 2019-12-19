@@ -88,11 +88,11 @@ const Blog = props => {
           <div className={styles.followArtists}>
             <p className={styles.followArtists__text}>Follow {data.artistName}</p>
             <div className={styles.followArtists__icons}>
-                {data.spotifyLink ? <a href={data.spotifyLink}><img src={"../spotify.png"} target="_blank"></img></a> : null}
-                {data.soundcloudLink ? <a href={data.soundcloudLink}><img src={"../soundcloud.png"}></img></a> : null}
-                {data.facebookLink ? <a href={data.facebookLink}><img src={"../facebook.png"}></img></a> : null}
-                {data.twitterLink ? <a href={data.twitterLink}>Twitter</a> : null}
-                {data.instagramLink ? <a href={data.instagramLink}><img src={"../instagram.png"} target="_blank"></img></a> : null}
+                {data.spotifyLink ? <a href={data.spotifyLink} target="_blank"><img src={"../spotify.png"} target="_blank"></img></a> : null}
+                {data.soundcloudLink ? <a href={data.soundcloudLink} target="_blank"><img src={"../soundcloud.png"}></img></a> : null}
+                {data.facebookLink ? <a href={data.facebookLink} target="_blank"><img src={"../facebook.png"}></img></a> : null}
+                {data.twitterLink ? <a href={data.twitterLink} target="_blank">Twitter</a> : null}
+                {data.instagramLink ? <a href={data.instagramLink} target="_blank"><img src={"../instagram.png"} target="_blank"></img></a> : null}
                 
             </div>
           </div>

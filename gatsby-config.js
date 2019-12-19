@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Full-Stack Bootcamp',
+        title: 'Loudly Mag',
         author: 'just add music GmbH',
         url: 'https://loudlyblog.com'
     },

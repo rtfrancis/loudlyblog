@@ -1,9 +1,12 @@
 .header {
-    padding: 1rem 0 3rem;
-    // border-bottom: 1px solid black;
-    margin-bottom: 4rem;
-    padding: 1rem 3rem 1rem;
-    
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    a{
+        text-decoration: none;;
+    }
 }
 .topContainer{
     display: flex;
@@ -11,63 +14,54 @@
 }
 
 .navSection{
-    // border: 1px solid black;
-    height: 50px;
-    // padding: 1rem;
+    height: 80px;
+    // padding: 3rem 0;
     display: flex;
+    margin-left: 1.5rem;
     align-items: center;
-    // p{
-    //     display: inline-block;
-    //     font-size: 16px;
-    //     margin-left: 60px;
-    //     vertical-align: top;;
-    // }
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .navIcon img{
     height: 25px;
     margin-right: 1.2rem; 
 }
-.getApp{
-    // width: 109px;
-//   height: 32px;
-//   font-family: NimbusSan-Bol;
-  font-size: 12px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: 0.76px;
-  text-align: center;
-  color: #000000;
-  padding-top: .5rem;
-  margin-left: 28px;
-  margin-right: 42px;
-  cursor: pointer;
-  box-sizing: border-box;
-  border-bottom: 2px solid transparent;
-}
-.getApp:hover{
-    // text-decoration: underline;
-    border-bottom: 2px solid black;
-    // padding-bottom: 1px;
+// .getApp{
+//   font-size: 12px;
+//   font-weight: bold;
+//   font-stretch: normal;
+//   font-style: normal;
+//   line-height: 2;
+//   letter-spacing: 0.76px;
+//   text-align: center;
+//   color: #000000;
+//   padding-top: .5rem;
+//   margin-left: 28px;
+//   margin-right: 42px;
+//   cursor: pointer;
+//   box-sizing: border-box;
+//   border-bottom: 2px solid transparent;
+// }
+// .getApp:hover{
+//     // text-decoration: underline;
+//     border-bottom: 2px solid black;
+//     // padding-bottom: 1px;
     
-}
+// }
 .submitMusic{
     border: 1px solid black;
-    transform: translateY(15%);
-    // width: 204px;
-//   height: 32px;
-//   font-family: NimbusSan-Bol;
-  font-size: 12px;
-  font-weight: bold;
-//   font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: 0.76px;
-  text-align: center;
-  color: #000000;
-  padding: 5px 15px;
-  cursor: pointer;
+    transform: translateY(10%);
+    width: 171px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.76px;
+    text-align: center;
+    color: #000000;
+    padding: 5px 15px;
+    cursor: pointer;
   
 }
 .submitMusic:hover{
@@ -75,16 +69,99 @@
     color: white;
 }
 
-
-
 .logo{
-    height: 50px;
+    height: 100px;
     
 }
 
-.blogLogo{
-    display: block;
-    height: 130px;
-    margin: 0 auto;
-    margin-top: 3rem;
+
+@media screen and (max-width: 1050px){
+    .logo{
+        height: 80px;
+    }
+    // .getApp{
+    //     margin-left: 10px;
+    //     margin-right: 24px;
+    // }
+}
+
+@media screen and (max-width: 750px){
+    .header{
+        margin-bottom: 50px;
+    }
+    .navSection{
+        height: 80px;
+        max-width: 170px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". . submit submit"
+            "icon1 icon2 icon3 icon4";
+        justify-items: center;
+        align-items: start;
+        .item-1{
+            grid-area: icon1;
+        }
+        .item-2{
+            grid-area: icon2;
+        }
+        .item-3{
+            grid-area: icon3;
+        }
+        .item-4{
+            grid-area: icon4;
+        }
+        .item-5{
+            grid-area: submit;
+            justify-self: end;
+        }
+    }
+    .navIcon img{
+        height: 25px;
+        margin-right: 0; 
+    }
+}
+
+@media screen and (max-width: 490px){
+    .header{
+        margin-bottom: 40px;
+    }
+    .logo{
+        // border: 1px solid blue;
+        height: 60px;
+    }
+    .submitMusic{
+        max-width: 140px;
+        font-size: 10px;
+        padding: 2px 4px;
+        // margin-top: 
+        margin-bottom: 0;
+    }
+    .navSection{
+        justify-items: center;
+    }
+    .navIcon img{
+        height: 20px;
+        margin-right: 0; 
+        margin-top: -10px;
+    }
+}
+@media screen and (max-width: 380px){
+    .header{
+        margin-bottom: 30px;
+    }
+    .logo{
+        height: 55px;
+    }
+    .submitMusic{
+        max-width: 120px;
+        padding: 0 2px;
+        font-size: 9px;
+        margin-bottom: -5px;
+    }
+    .navIcon img{
+        height: 18px;
+        margin-top: -20px;
+    }
 }
